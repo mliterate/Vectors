@@ -9,7 +9,7 @@ int i=0;
 
 void setup() {
   //set size of canvas
-  size(800, 600);
+  size(600, 600);
 
   //initialize variables
   //loc.x = width/2;
@@ -20,7 +20,7 @@ void setup() {
   loc[i] = new PVector (width/2, height/2);
   vel[i] = PVector .random2D();
 
-  diam = 80;
+  diam = 10;
   //velX = random(-5, 5);
   //velY = random(-5, 5);
   }
@@ -32,6 +32,9 @@ void draw() {
   
    
   background(0);
+ 
+ fill(random(255),random(255),random(255));
+ 
  for(i =0; i<count; i++){
   //draw ball
   ellipse(loc[i].x, loc[i].y, diam, diam);
