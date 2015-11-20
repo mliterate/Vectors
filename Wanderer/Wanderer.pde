@@ -29,12 +29,17 @@ void draw() {
 
 
   //draw background to cover previous frame
-  fill((frameCount + 60*i)%360,180,360);   //chane the fill
+
 
 
   for (i =0; i<count; i++) {
  
+    
+      fill((frameCount + 1000*i)%360,180,360);   //change the fill
     //draw ball
+   
+    
+    
     ellipse(loc[i].x, loc[i].y, diam, diam);
     acc[i] =PVector .random2D();
     acc[i].mult(.1);
